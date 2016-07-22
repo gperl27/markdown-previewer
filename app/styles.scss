@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Crete+Round);
+@import url(https://fonts.googleapis.com/css?family=ABeeZee);
+
+
+$headerfont: 'Crete Round', serif;
+$bodyfont: 'ABeeZee', san-serif;
+$height: 80vh;
+$shadow: 5px 5px 10px #333;
+$blue: #04756F;
+$orange: #FF8C00;
+$red: #FF2D00;
+$orangeborder: 1px solid #FF8C00;
+
+body {
+    background-color: $blue;
+    font-family: $bodyfont;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $headerfont;
+}
+
+a {
+    color: $orange;
+    transition: .2s;
+}
+
+a:hover {
+    color: #fff;
+    transition: .2s;
+    text-decoration: none;
+    letter-spacing: 5px;
+}
+a:focus {
+    color: $orange;
+    text-decoration: none;
+}
+
+
+.header {
+    text-align: center;
+    font-size: 72px;
+    color: $orange;
+    padding: 25px;
+    border-bottom: $orangeborder;
+}
+
+.footer {
+    border-top: $orangeborder;
+    padding: 25px;
+    text-align: center;
+}
+
+
+.box {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    .content {
+        height: $height;
+        background-color: #fff;
+        padding: 25px;
+        box-shadow: $shadow;
+    }
+    textarea {
+        width: 100%;
+        resize: vertical;
+        height: $height;
+        padding: 25px;
+        box-shadow: $shadow;
+        font-family: monospace;
+    }
+    textarea:focus {
+            outline-color: $orange;
+    }
+}
